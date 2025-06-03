@@ -45,7 +45,6 @@ mv 旧目录或文件名 新目录或文件名  // 移动或重命名文件或�
 cp [-r] 旧目录或文件名 新目录或文件名  // 拷贝文件或文件夹
 which [-a] command                      // 
 type
-
 cat 文件名   											// 从第一行查看文本文件内容
 tac 文件名                                              // 从最后一行查看文本文件内容
 more 文件名    											// 分页查看文本文件内容
@@ -55,31 +54,26 @@ tail -f 文件名 											// 显示文本的最后几行，并实时刷新
 od 文件名                                               // 将文本以而进制形式显示
 wc 文件名  												// 统计文本的行数、列数
 grep “内容” 文件名 										// 搜索文件中的内容
-
 find 目录名 -name 文件名 -print 						// 查找目录中的文件并打印
 find [PATH] [option] [action]
 		-mtime n //在n天之前的一天之内被更改过的文件
 		-mtime +n //列出在n天之前被更改过的文件和文件名
 		-mtime -n //在n天之内更改过的文件
 		-mtime file //列出比file更新的文件名
-	
 		-uid n //
 		-gid n
 		-user name 
 		-group name
 		-nouser
 		-nogroup
-		
 		-name filename
 		-size [+-]SIZE //c:byte,k:1024bytes
 		-type TYPE //f:正规文件，d:目录文件，l：链接文件，s:socket, p:FIFO
 		-perm mode
 		-perm -mode
 		-perm /mode
-	
 		-exec command
 		-print
-	
 touch 文件名                                           // 修改文件时间、创建新文件
 file 文件名                                             // 查看文件类型
 ```
@@ -115,16 +109,17 @@ Ctrl + z    //暂停当前进程
 Ctrl + c    //结束当前进程
 fg %1       //调回前景运行程序 
 bg %2       //将背景环境程序运行
+ps          //显示当前任务状态
 ```
 
 ## 用户群组操作  
 ```c
-groupadd 用户组                						    //添加用户组
-groupdel 用户组                 						// 删除用户组
-useradd -n 用户名 -g 组名 -d 用户的主目录 // 添加用户
-userdel 用户名                            //  删除用户
-passwd [用户名]                           // 修改密码
-su - root                                  // 切换用户
-chown [-R] 用户名:组名 目录或文件名列表   // 更改文件的用户名或用户组
-df [-h][-T]                                // 查看磁盘信息
+groupadd 用户组                							//添加用户组
+groupdel 用户组                 							// 删除用户组
+useradd -n 用户名 -g 组名 -d 用户的主目录					  // 添加用户
+userdel 用户名                            					 //  删除用户
+passwd [用户名]                           					 // 修改密码
+su - root                                  				    // 切换用户
+chown [-R] 用户名:组名 目录或文件名列表   	                  // 更改文件的用户名或用户组
+df [-h][-T]                                                  // 查看磁盘信息
 ```
