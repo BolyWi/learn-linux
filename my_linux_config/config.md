@@ -9,3 +9,6 @@
 - 安装zsh插件
   - 命令提示插件 `git clone https://gitee.com/imirror/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
   - 语法高亮插件 `git clone https://gitee.com/imirror/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
+ 
+- 安装Qt5开发环境
+  - `sudo apt install qt5-default qttools5-dev-tools qttools5-dev qtcreator`
