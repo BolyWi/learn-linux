@@ -11,4 +11,4 @@
   - 语法高亮插件 `git clone https://gitee.com/imirror/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
  
 - 安装Qt5开发环境
-  - `sudo apt install qtbase5-dev qttools5-dev-tools qttools5-dev qtcreator`
+  - `sudo apt install qtbase5-dev qttools5-dev-tools qttools5-dev qtcreator qtbase5-examples qtbase5-doc qtbase5-doc-dev qtbase5-doc-html `
