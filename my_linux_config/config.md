@@ -1,6 +1,6 @@
 # linux 常用安装配置脚本
 
-- 一键换源 `curl -sSL https://linuxmirrors.cn/main.sh | sudo bash`
+- 一键换源 `curl -sSL https://linuxmirrors.cn/main.sh | sudo bash` `bash <(curl -sSL https://linuxmirrors.cn/main.sh)`
 
 - 安装常用软件 `sudo apt install -y git htop btop zsh gcc g++ cmake make python3 vim vim-airline curl unzip`
 
