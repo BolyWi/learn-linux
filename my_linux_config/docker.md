@@ -2,6 +2,7 @@
 
 ## SetUp Docker
 -  `bash <(wget -qO- https://xuanyuan.cloud/docker.sh)` 一键换源指令
+-  `docker run -it --entrypoint /bin/bash ollama/ollama` 指定bash入口点
 
 # Docker 常用命令速查表
 
