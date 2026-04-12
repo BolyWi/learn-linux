@@ -9,6 +9,14 @@
   ]
 }
 ```
+```bash
+# 1. 重新加载 systemd 管理配置，让 Docker 知道配置文件有更新
+sudo systemctl daemon-reload
+
+# 2. 重启 Docker 服务，应用新的镜像源地址
+sudo systemctl restart docker
+```
+
 -  `docker run -it --entrypoint /bin/bash ollama/ollama` 指定bash入口点
 
 # Docker 常用命令速查表
