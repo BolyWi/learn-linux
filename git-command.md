@@ -21,13 +21,16 @@
 - `git rm`                                              <p>删除本地库中的文件</p>
 - `git mv`                                              <p>移动本地库中的文件</p>
 - `git reset`                                           <p>回退至某个代码版本</p>
+- `git reset --soft HEAD~1`                             <p>撤销上次commit,保留修改到暂存区</p>
 - `git tag [-a]`
 - `git tag -a <tagname> -m "description of message"`
 
 ## 分支管理
--`git branch <branchname>`                               <p>新建分支</p>
--`git checkout [-b][-d] <branchname>`                    <p>切换分支</p>
--`git merge`                                             <p>合并分支</p>
+- `git branch <branchname>`                               <p>新建分支</p>
+- `git checkout [-b][-d] <branchname>`                    <p>切换分支</p>
+- `git switch <branchname>`                               <p>合并分支</p>
+- `git merge <branchname>`                                
+- `git cherry-pick <hashId>`                              <p>应用某次commit</p>
 
 ## 日志记录
 - `git status`                                           <p>查看仓库当前的状态，显示有变更的文件</p>
